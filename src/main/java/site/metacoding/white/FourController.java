@@ -19,7 +19,7 @@ public class FourController {//DS는 IoC에 뜬 컨트롤러를 가져와서 메
 		return four;//DS가 Four 오브젝트를 리턴받고 해당 오브젝트를 MessageConverter에게 전달
 	}
 	
-	@GetMapping("/four/data")//이 방식도 사실 안쓴다!!
+	@GetMapping("/four/data")//이 방식이 표준이긴함!
 	public ResponseEntity<?> getData2() {
 		Four four = new Four();
 		four.setTitle("제목");

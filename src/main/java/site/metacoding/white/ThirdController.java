@@ -26,6 +26,6 @@ public class ThirdController {
 	
 	@PutMapping("/third/{id}/json")
 	public String putJsonData(@PathVariable Integer id, @RequestBody Third third) {//클래스에 값을 넣을 때 json으로 넣도록 바꿔줌
-		return third.toString();
+		return third.toString()+"주소로 받은거: "+id;
 	}
 }
